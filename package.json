@@ -52,7 +52,7 @@
   ],
   "scripts": {
     "start":"npm run dev form",
-    "save":"git add . && git commit -m \"auto save\" --no-verify ",
+    "save":"git add . && git commit -m \"auto save\" --no-verify && git push",
     "report-coverage": "codecov",
     "preview": "node ./scripts/preview/index.js",
     "dev": "node ./scripts/server/index.js",
