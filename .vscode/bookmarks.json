@@ -1,0 +1,29 @@
+{
+	"files": [
+		{
+			"path": "src/form/item.jsx",
+			"bookmarks": [
+				{
+					"line": 245,
+					"column": 35,
+					"label": "form获取name"
+				},
+				{
+					"line": 261,
+					"column": 0,
+					"label": "获取状态"
+				}
+			]
+		},
+		{
+			"path": "src/form/submit.jsx",
+			"bookmarks": [
+				{
+					"line": 39,
+					"column": 27,
+					"label": "form提交(field来自context)"
+				}
+			]
+		}
+	]
+}

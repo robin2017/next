@@ -37,6 +37,7 @@ class Submit extends React.Component {
     };
 
     handleClick = () => {
+        console.log('点击提交')
         const { onClick, validate } = this.props;
         const field = this.context._formField || this.props.field;
 

@@ -236,13 +236,15 @@ export default class Item extends React.Component {
      */
     getNames(children) {
         const childrenList = React.Children.toArray(children);
-        return childrenList
-            .filter(c => {
-                return c.props && ('name' in c.props || 'data-meta' in c.props);
-            })
-            .map(c => {
-                return c.props.name || c.props.id;
-            });
+        const rst = childrenList
+        .filter(c => {
+            return c.props && ('name' in c.props || 'data-meta' in c.props);
+        })
+        .map(c => {
+            return c.props.name || c.props.id;
+        });
+        console.log('获取names：',rst)
+        return rst
     }
 
     getHelper(children) {
@@ -257,6 +259,7 @@ export default class Item extends React.Component {
     }
 
     getState(children) {
+        console.log('获取状态')
         const { validateState } = this.props;
         if (validateState) {
             return validateState;
@@ -444,7 +447,7 @@ export default class Item extends React.Component {
 
     render() {
         const { className, style, prefix, wrapperCol, labelCol, responsive, children } = this.props;
-
+        console.log('hahah:',this.props)
         const labelAlign = this.getLabelAlign(this.props.labelAlign, this.props.device);
 
         let childrenNode = children;
